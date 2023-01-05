@@ -26,7 +26,7 @@ Homepage responsiva para um mini e-commerce de calçados. Projeto desenvolvido c
 
 ### Demonstração
 <div align="center">
-    <img width="750" alt="GIF demontrando o Rocketblog" src=".github/rocketblog.gif" />
+    <img width="750" alt="GIF demontrando o Rocketblog" src=".github/rocketshoes.gif" />
 </div>
 
 ---
@@ -63,6 +63,12 @@ $ code .
 # Execute o arquivo index com a extensão Live Server, clicando com o botão direito sobre ele e depois em Open with Live Server
 
 ```
+
+---
+
+## ⚙️ Deploy
+
+O deploy desse projeto foi realizado através do **[Github Pages](https://www.infinityfree.net/)**. Isso implica que você pode acessar o projeto funcionando acessando esse **[link](https://johnpetros.github.io/super-trunfo-clash-royale/)**
 
 ---
 

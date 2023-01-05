@@ -4,7 +4,6 @@
   --background: #e5e5e5;
   --white: #fff;
   --text: #000;
-  --footer: #000;
   --text-description: #9c9696;
 
   font-size: 62%;
@@ -274,6 +273,7 @@ button:hover {
     color: var(--white);
   }
   header .search {
+    width: 20rem;
     padding: 0.5rem;
   }
   footer {
@@ -297,9 +297,6 @@ button:hover {
 @media (max-width: 420px) {
   header {
     padding: 0 1rem;
-  }
-  header .search {
-    width: 20rem;
   }
   main {
     height: 70rem;
