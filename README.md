@@ -30,6 +30,7 @@ Homepage responsiva para um mini e-commerce de calçados. Projeto desenvolvido c
 </div>
 
 ---
+<br>
 
 
 ## 🚀 Tecnologias
@@ -40,6 +41,8 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 
 ✔️ **[HTML](https://developer.mozilla.org/pt-BR/docs/Web/HTML)**
 
+---
+<br>
 
 ## Como rodar este projeto
 
@@ -65,12 +68,14 @@ $ code .
 ```
 
 ---
+<br>
 
 ## ⚙️ Deploy
 
 O deploy desse projeto foi realizado através do **[Github Pages](https://www.infinityfree.net/)**. Isso implica que você pode acessar o projeto funcionando acessando esse **[link](https://johnpetros.github.io/super-trunfo-clash-royale/)**
 
 ---
+<br>
 
 ## 🎨 Layout:
 No link abaixo você encontra o layout do projeto feito pela equipe da Rocketseat. Lembrando que você precisa ter uma conta no [Figma](http://figma.com/) para acessá-lo.
@@ -78,6 +83,7 @@ No link abaixo você encontra o layout do projeto feito pela equipe da Rocketsea
 - [Layout](https://www.figma.com/file/NT0mBORvWYLeobmoyZZH1u/DD-%2F-RocketShoes-(Copy)?node-id=0%3A1&t=w5PPHxPgcmxI5q32-0)
 
 ---
+<br>
 
 ## :memo: Licença
 
