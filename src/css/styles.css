@@ -1,0 +1,329 @@
+:root {
+  --button: #ff0000;
+  --main-background: #c4c4c4;
+  --background: #e5e5e5;
+  --white: #fff;
+  --text: #000;
+  --footer: #000;
+  --text-description: #9c9696;
+
+  font-size: 62%;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+html,
+body {
+  height: 100vh;
+}
+
+header {
+  display: flex;
+  position: fixed;
+  top: 3rem;
+  justify-content: space-around;
+  align-items: center;
+  width: 100vw;
+  padding: 0 4rem;
+}
+
+header .menu-trigger {
+  display: none;
+}
+
+header .btn-mobile {
+  display: none;
+  background-color: inherit;
+  border: none;
+  z-index: 15;
+}
+
+header .btn-mobile .menu-hamburguer {
+  display: block;
+  width: 2.5rem;
+  border-top: 0.2rem solid var(--text);
+}
+
+header .menu-trigger:checked + .btn-mobile .menu-hamburguer {
+  border-top-color: transparent;
+}
+
+header .menu-trigger:checked + .btn-mobile .menu-hamburguer::before {
+  transform: rotate(135deg);
+  background: var(--white);
+}
+header .menu-trigger:checked + .btn-mobile .menu-hamburguer::after {
+  transform: rotate(-135deg);
+  top: -7px;
+  background: var(--white);
+}
+
+header .btn-mobile .menu-hamburguer::before,
+header .btn-mobile .menu-hamburguer::after {
+  content: "";
+  display: block;
+  width: 2.5rem;
+  height: 0.2rem;
+  position: relative;
+  margin-top: 0.5rem;
+  background: var(--text);
+  transition: all 0.4s ease;
+}
+
+header .menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 60%;
+}
+
+.link {
+  text-decoration: none;
+  color: var(--text);
+  font-weight: bold;
+  font-size: 2.4rem;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: opacity 0.2s ease;
+}
+
+header .search {
+  background-color: var(--white);
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.5rem 1rem;
+  border: 1px solid var(--main-background);
+  cursor: pointer;
+}
+
+header .search input {
+  width: 100%;
+  background-color: inherit;
+  border: none;
+  outline: none;
+  font-size: 1.8rem;
+}
+
+main {
+  display: flex;
+  height: 100%;
+}
+
+main .product-info {
+  background-color: var(--background);
+  flex: 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+main .product-info .info {
+  width: 35rem;
+  display: flex;
+  flex-direction: column;
+}
+
+main .product-info .info .name {
+  font-size: 6rem;
+}
+
+main .product-info .info .description {
+  font-size: 1.6rem;
+  margin: 2rem 0;
+}
+
+main .product-info .info .price {
+  font-size: 4rem;
+}
+
+main .product-info .info button {
+  background-color: var(--button);
+  color: var(--white);
+  border: none;
+  padding: 2rem 2.5rem;
+  font-size: 2.4rem;
+  margin-top: 3rem;
+  cursor: pointer;
+  transition: opacity 0.2s ease;
+}
+
+main .product-images {
+  background-color: var(--main-background);
+  flex: 3.5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+main .product-images .galery {
+  display: flex;
+  gap: 3rem;
+}
+
+main .product-images .galery .image.selected {
+  border-bottom: 5px solid var(--button);
+}
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+footer .social-medias {
+  display: flex;
+  justify-content: space-around;
+  list-style: none;
+  flex: 2;
+}
+
+footer .link {
+  font-size: 1.8rem;
+}
+
+footer button {
+  background-color: var(--footer);
+  color: var(--white);
+  border: none;
+  flex: 1;
+  height: 20rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  font-size: 2.4rem;
+  cursor: pointer;
+  transition: opacity 0.2s ease;
+}
+
+.link:hover,
+button:hover {
+  opacity: 0.8;
+}
+
+@media (max-width: 1224px) {
+  header .link {
+    font-size: 1.8rem;
+  }
+  main {
+    flex-direction: column-reverse;
+    height: 90rem;
+  }
+  main .product-info .info {
+    padding: 5rem 0;
+  }
+  main .product-info .info .name {
+    font-size: 3.5rem;
+  }
+  main .product-info .info .price {
+    font-size: 4rem;
+  }
+  main .product-images {
+    padding-top: 10rem;
+
+    flex-direction: row;
+  }
+  main .product-images .showcase {
+    width: 30rem;
+  }
+  main .product-images .galery {
+    flex-direction: column;
+  }
+  main .product-images .galery .image {
+    width: 10rem;
+  }
+  footer .link {
+    font-size: 1.6rem;
+  }
+  footer button {
+    font-size: 1.6rem;
+  }
+}
+
+@media (max-width: 840px) {
+  header .btn-mobile {
+    display: block;
+    z-index: 15;
+  }
+  header .menu {
+    height: 100vh;
+    position: absolute;
+    flex-direction: column;
+    justify-content: center;
+    gap: 2rem;
+    position: absolute;
+    top: -3rem;
+    left: -22rem;
+    width: auto;
+    padding: 0 5rem;
+    color: var(--white);
+    background-color: var(--footer);
+    transition: all 0.4s ease;
+  }
+  header .menu-trigger:checked ~ .menu {
+    left: 0.01rem;
+  }
+  header .menu .link {
+    color: var(--white);
+  }
+  header .search {
+    padding: 0.5rem;
+  }
+  footer {
+    flex-direction: column;
+  }
+  footer .video {
+    width: 90%;
+    height: 35rem;
+  }
+  footer .social-medias {
+    padding: 4.5rem 0;
+    justify-content: space-around;
+    width: 100%;
+  }
+  footer button {
+    width: 100%;
+    padding: 4rem 0;
+  }
+}
+
+@media (max-width: 420px) {
+  header {
+    padding: 0 1rem;
+  }
+  header .search {
+    width: 20rem;
+  }
+  main {
+    height: 70rem;
+  }
+  main .product-info .info {
+    padding: 4rem 1.5rem;
+  }
+  main .product-info .info button {
+    padding: 1.5rem;
+    font-size: 1.8rem;
+  }
+  main .product-info .info .name {
+    font-size: 2.4rem;
+  }
+  main .product-info .info .price {
+    font-size: 2.2rem;
+  }
+  main .product-images .showcase {
+    width: 22rem;
+  }
+  main .product-images .galery .image {
+    width: 8rem;
+  }
+  footer .link {
+    font-size: 1.4rem;
+  }
+}

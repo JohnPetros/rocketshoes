@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="src/css/styles.css" />
+    <title>Rocket Shoes</title>
+  </head>
+  
+  <body>
+    <header>
+      <input class="menu-trigger" type="checkbox" id="menu-trigger" />
+      <label class="btn-mobile" for="menu-trigger">
+        <span class="menu-hamburguer"></span>
+      </label>
+      <div class="menu">
+        <img class="logo" src="src/assets/logo.svg" alt="Logo" />
+        <a class="link" href="#">Homem</a>
+        <a class="link" href="#">Mulher</a>
+        <a class="link" href="#">Criança</a>
+        <a class="link" href="#">Customizar</a>
+      </div>
+      <label class="search" for="search">
+        <img src="src/assets/icon-search.svg" alt="Ícone de pesquisa" />
+        <input
+          type="search"
+          id="search"
+          class="search"
+          placeholder="pesquisar"
+        />
+      </label>
+      <a class="link"
+        ><img src="src/assets/icon-bag.svg" alt="Ícone de bolsa"
+      /></a>
+    </header>
+
+    <main>
+      <div class="product-info">
+        <div class="info">
+          <h1 class="name">Tênis Esportivo Para Corrida Top</h1>
+          <p class="description">
+            Esse tênis tem o intuito de te deixar ainda mais fitness, focado, e
+            musculoso.
+          </p>
+          <strong class="price">R$ 1.000,00</strong>
+          <button>Comprar</button>
+        </div>
+      </div>
+      <div class="product-images">
+        <img
+          class="showcase"
+          src="src/assets/tenis-1-ampliado.png"
+          alt="Tênis ampliado"
+        />
+        <div class="galery">
+          <img class="image" src="src/assets/tenis-1-galeria.png" alt="Tênis" />
+          <img
+            class="image selected"
+            src="src/assets/tenis-2-galeria.png"
+            alt="Tênis"
+          />
+          <img class="image" src="src/assets/tenis-3-galeria.png" alt="Tênis" />
+        </div>
+      </div>
+    </main>
+
+    <footer>
+      <iframe
+        class="video"
+        width="350"
+        height="200"
+        src="https://www.youtube.com/embed/MSo_rufiBBE"
+        title="YouTube video player"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen
+      ></iframe>
+      <ul class="social-medias">
+        <li><a class="link" href="#">Facebook</a></li>
+        <li><a class="link" href="#">Instagram</a></li>
+        <li><a class="link" href="#">Youtube</a></li>
+        <li><a class="link" href="#">Twitter</a></li>
+      </ul>
+      <button>
+        Explore mais <img src="src/assets/icon-arrow.svg" alt="Ícone de flecha" />
+      </button>
+    </footer>
+  </body>
+</html>
