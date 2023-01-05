@@ -1,5 +1,5 @@
 <h1 align="center">
-    Rocket Shoes
+    Rocket Shoes 👟
 </h1>
 
 <div align="center">
