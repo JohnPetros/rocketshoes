@@ -33,7 +33,7 @@ Homepage responsiva para um mini e-commerce de calçados. Projeto desenvolvido c
 <br>
 
 
-## 🚀 Tecnologias
+## 🛠️  Tecnologias
 
 Esse projeto foi desenvolvido com as seguintes tecnologias:
 
@@ -44,7 +44,7 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 ---
 <br>
 
-## Como rodar este projeto
+## 🚀 Como rodar este projeto
 
 ### Pré-requesitos
 
